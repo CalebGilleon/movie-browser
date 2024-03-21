@@ -1,0 +1,60 @@
+.hero-container {
+    position: relative;
+    z-index: 100;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 200;
+}
+
+.hero-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.4;
+}
+
+.home-lead {
+    position: relative;
+    margin-top: 25px;
+    color: white;
+    font-style: italic;
+    font-size: 50px;
+}
+
+.home-container {
+    position: relative;
+    background-image: url(../public/home-background.jpg);
+    height: 700px;
+}
+
+.home-container::before {
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.sad-face-container {
+    display: flex;
+    justify-content: center;
+}
+
+.sad-face {
+    position: relative;
+    color: white;
+    background-image: url(../public/sad-face.png);
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+}
+
+.not-found-message {
+    text-align: center;
+    font-size: 30px;
+}
