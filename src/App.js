@@ -32,6 +32,7 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
+        <Route path="/movie-browser" component={Home} />
         <Route path="/about" component={AboutView} />
         <Route path="/search">
           <SearchView keyword={searchText} searchResults={searchResults}/>
